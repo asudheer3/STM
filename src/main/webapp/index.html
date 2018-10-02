@@ -1,0 +1,79 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Sunny Tailors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="ajsscript.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+ 
+</head>
+
+<body style="margin:0 auto; background-color: rgb(233,228,208);" ng-app="myApp" ng-controller="myCtrl">
+    <div class="main-wrapper">
+     
+        <div class="header-image" style="position: fixed;width: 100%;background-image:  linear-gradient(to bottom, #b2cfff, #e9e4d0);">
+           <center> <img src="header.png" align="center" class=""  height="100px"><br>
+            Contact us at: 8008555772
+           </center>
+            <!-- </div> -->
+            <div style="position: static;overflow: hidden; width:100%;margin: 0 auto;z-index: 99;" class="">
+            <ul class="navbar-p">
+                <!--<img class="logo" src='http://img04.en25.com/EloquaImages/clients/TECHMAHINDRALIMITED/%7Baa858e35-bbff-4b1a-9564-f7dbe2806e34%7D_2000px-Tech_Mahindra_New_Logo.svg.png'>-->
+               <!-- <div style="float: right;" class="">
+                    <li class="navbar-c"><a href="#">Home</a></li>
+                    <li class="navbar-c"><a href="#">Whitepaper</a></li>
+                    <li class="navbar-c"><a href="#">Testimonials</a></li>
+                    <li class="navbar-c"><a href="#">Videos</a></li>
+                </div> -->
+                
+            </ul>
+        </div>
+        </div>
+
+        
+        <div class="col-12" style="padding-top: 140px">
+
+       <!--     <div class="col-12" style="padding:15px;padding-bottom: 20px;padding-top:20px;  background-color: white;max-width: 98%; margin:1%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+<center><strong style="color:blue; font-size:16px;"><a href="#">Bob Gourley</a></strong>, the CTO of the Central Intelligence Agency (CIA) tweeted on the ISOC: "<strong><span style="color:red">This looks really cool. Everyone needs it</span>"</strong></center>
+            </div>
+        -->
+
+            <div class="col-3" ng-repeat="x in choices">
+               <div style="padding:10px;background-color: white;max-width: 96%; margin:1%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                <img src="images/A ({{x.Id}}).jpg" alt="images/A ({{x.Id}}).jpg" onclick="imgs(this.src)" class="elq-content-image" style="margin:0 auto; display:block;width:100%; height: 250px;">
+                <label style="width: 45%;text-align: center;margin: 10px 0px;">CODE:S{{x.Id}} | Rs.{{x.Rate}}</label>
+                <input align="right" style="margin: 5px 0px;width: 40%;" class="Button" type="button" onclick="" value="Enquiry now">
+            </div>
+            </div>   
+           
+        </div>
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<div id="myModalForm" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" >
+  <div id="caption"></div>
+</div> 
+        
+    </div>
+    <br>
+    <div class="copyFooter col-12">
+        <p>This website uses cookies to ensure you get the best experience on our website.{{firstName+ " " + lastName }}</p>
+    </div>
+<!--[if lt IE 7]>
+<script src='http://img04.en25.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+<![endif]-->
+
+</body>
+<script src="jsscript.js"></script>
+</html>
+

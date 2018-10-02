@@ -1,0 +1,341 @@
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+}
+
+    .text {
+        padding: 0px 15px 20px 15px;
+        font-size: 14px;
+        /* width: 900; */
+        /* margin: 0 auto; */
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-p {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.74) none repeat scroll 0% 0%;
+        font-size: 13px;
+        font-weight: bold;
+        opacity: 0.9;
+    }
+
+    .navbar-c {
+        float: left;
+    }
+
+    .navbar-c a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px 16px;
+
+        text-decoration: none;
+    }
+
+    .navbar-c a:hover {
+        background-color: black;
+        color: yellow;
+    }
+
+    #mybtn .regfloat:hover {
+        background-color: blue;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .header {
+        padding: 0px;
+    }
+
+    .footer {
+        padding: 0px;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .header-image {
+        display: block;
+        margin: auto;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    [class*="col-"] {
+        float: left; //border: 1px solid red;
+        padding: 2px;
+    }
+
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    .tabcontent {
+        display: none;
+        padding-top: 20px;
+    }
+
+    .fullButton {
+        background-color: #E51A38;
+
+        /* Green */
+        border: none;
+        max-width: 250px;
+        width: 100%;
+        color: white;
+        padding: 10px;
+        border-radius: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 2px 2px;
+        cursor: pointer;
+    }
+
+    .Button {
+        background-color: #E51A38;
+
+        /* Green */
+        border: none;
+        max-width: 120px;
+        width: 100%;
+        color: white;
+        padding: 2px;
+        border-radius: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 2px 2px;
+        cursor: pointer;
+    }
+
+    .title {
+        text-align: center;
+        font-weight: bold;
+    }
+      .logo{
+       padding-left:10px;padding:5px;background:white;width:25%;
+        max-width:150px;
+      }
+@media screen and (min-width:481px){
+          .meetFlex{
+        display:flex; 
+      }
+      }
+    @media screen and (max-width:480px) {
+         meetFlex{
+        display:block !important; 
+      }
+        .logo{
+          width:35% !important;
+          max-width:125px !important;
+        }
+        .modal-content {
+            width: 80% !important;
+        }
+        .col-1,
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .col-6,
+        .col-7,
+        .col-8,
+        .col-9,
+        .col-10,
+        .col-11,
+        .col-12 {
+            width: 100%;
+        }
+        .navbar-p {
+            font-size: 11px;
+            font-weight: bold;
+        }
+        .regfloat {
+
+            padding-left: 5px !important;
+            padding-right: 1px !important;
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+            font-size: 14px !important;
+            margin: 0px;
+            cursor: pointer;
+        }
+        .dummy {
+            display: none;
+        }
+        .navbar-c a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 13px 8px;
+            text-decoration: none;
+        }
+    }</style>
+    <style>
+      .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #222;
+   color: white;
+   text-align: center;
+        font-size:13px;
+}
+ .copyFooter {
+   
+  background: #000;
+  text-align: center;
+  color: #fff;
+}
